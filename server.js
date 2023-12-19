@@ -13,6 +13,11 @@ const app = express();
 //port define
 const PORT = process.env.PORT || 5000;
 
+//middleware for importing routes
+app.use(express.json());
+app.use("/api/inventory", require("./route/inventoryRoute"));
+app.use("/api/users", require("./route/userRoute"));
+
 //server start
 const startServer = async()=>
 {

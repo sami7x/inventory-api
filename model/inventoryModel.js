@@ -1,8 +1,8 @@
 //importing module
-const { MongoDBCollectionNamespace } = require("mongodb");
+
 const mongoose = require("mongoose");
 
-const inventorySchema = mongoose.schema(
+const inventorySchema = mongoose.Schema(
     {
         user_id:
         {
